@@ -1,0 +1,63 @@
+.topbar li{
+    background-color: greenyellow;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    width: fit-content;
+}
+.topbar li a{
+    text-decoration: none;
+}
+body
+{
+    margin : 0px;
+}
+.topbar
+{
+    padding: 10px;  
+    overflow: hidden; 
+    background-color: aqua;
+    margin: 0px;
+
+}
+
+.heading
+{
+    height: 150px;
+    margin:0px;
+}
+
+
+form
+{
+    width:fit-content;
+    height: fit-content;
+    padding: 15px;
+    border: 5px solid black;
+    margin-top: 20px;
+    background-color: azure;
+}
+.form_element{
+    margin: 10px;
+    text-align: left;
+}
+.form_element select{
+    float:right;
+}
+.form_element input{
+    float:right;
+}
+
+
+
+.submit_button
+{
+    background-color: orange;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20;
+}
+
+
+

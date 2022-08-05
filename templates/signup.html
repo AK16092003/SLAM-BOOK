@@ -1,0 +1,86 @@
+<html>
+    <head><title>SIGN UP</title></head>
+    <link rel = "stylesheet" href = "{{url_for('static' , filename = 'css/style.css')}}">
+    <body bgcolor="lightyellow">
+        <h1 class = "heading" style="background-image: url('{{url_for('static' , filename = 'images/header_bg.png')}}');"><center>SLAM BOOK</center></h1>
+        <ul class = "topbar">
+            <li><a href = "/home.html"><b>Home</b></a></li>
+            <li><a href = "/search.html"><b>Search</b></a></li>
+            <li><a href = "/login.html"><b>Log In</b></a></li>
+            <li><a href = "/signup.html"><b>Sign Up</b></a></li>
+        </ul>
+        <center>
+        <form method = "POST" action = "/signup.html">
+                <center><h2>SIGN UP</h2></center>
+                <br>
+                <p class = "form_element">ENTER YOUR NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  
+                    <input type="text" name = "name">
+                </p>
+                <p class = "form_element">ENTER YOUR D.O.B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                    <input type="date" name = "dob">
+                </p>
+                <p class = "form_element">ENTER YOUR YEAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                    <select name = "year">
+                        <option>4th year</option>
+                    </select>
+                </p>
+                <p class = "form_element">DEGREE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name = "degree">
+                        <option>B ARCH</option>
+                        <option>B TECH Chemical Engineering</option>
+                        <option>B TECH Civil Engineering</option>
+                        <option>B TECH Computer Science and Engineering</option>
+                        <option>B TECH Electrical and Electronics Engineering</option>
+                        <option>B TECH Electronics and Communication Engineering</option>
+                        <option>B TECH Instrumentation and Control Engineering</option>
+                        <option>B TECH Mechanical Engineering</option>
+                        <option>B TECH Metallurgical and Materials Engineering</option>
+                        <option>B TECH Production Engineering</option>
+                    </select>
+                </p>
+                <p class = "form_element">ENTER HOSTEL NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&emsp;&emsp;&emsp;
+                    <select name = "hostelname">
+                        <option>Agate</option>
+                        <option>Coral</option>
+                        <option>Diamond</option>
+                        <option>Beryl</option>
+                        <option>Jade</option>
+                        <option>Garnet - A</option>
+                        <option>Garnet - B</option>
+                        <option>Garnet - C</option>
+                        <option>Zircon - A</option>
+                        <option>Zircon - B</option>
+                        <option>Zircon - C</option>
+                        <option>Amber - A</option>
+                        <option>Amber - B</option>
+                        <option>Opal - A</option>
+                        <option>Opal - B</option>
+                        <option>Opal - C (East)</option>
+                        <option>Opal - C (West)</option>
+                        <option>Opal - D</option>
+                        <option>Opal - E</option>
+                        <option>Opal - F</option>
+                    </select>
+                </p>
+                <p class = "form_element">ENTER ROOM NUMBER :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name = "roomnumber">
+                </p>
+                <p class = "form_element">ENTER A USERNAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    <input type="text" name = "username">
+                </p>
+                <p class = "form_element">ENTER A PASSWORD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    <input type="password" name = "password">
+                </p>
+                <br><br>
+                <center>
+                    <button type = "submit" class = "submit_button">SUBMIT</button>
+                </center>
+            </form>
+        </center>
+
+{%if msg%}
+<script>alert("{{msg}}");</script>
+{%endif%}
+
+    </body>
+</html>
