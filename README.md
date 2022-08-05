@@ -1,4 +1,4 @@
 # SLAM-BOOK
 delta task 3
-backend framework - flask
-front end - no frameworks , only pure html , css , js
+### backend framework - flask
+### front end - html , css , vanilla js
